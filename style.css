@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    /* FONTS */
+
+    --primary-font: 'Hanken Grotesk', sans-serif;
+    --Font-size-para: 18px;
+    /* primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    /* Gradient */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: var(--Font-size-para);
+    font-family: var(--primary-font);
+
+}
+.container{
+    max-width: 600px;
+    height: 462px;
+    display: flex;
+    box-shadow: 20px 24px 55px -52px var(--Green-teal);
+}
+
+.result{
+    width: 50%;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(13deg, var(--Light-royal-blue),var(--Violet-blue),var(--Light-slate-blue)665px);
+    border-radius: 30px;
+    background-position: 0px 0;
+    padding: 2rem 3rem;
+    background-repeat: no-repeat;
+}
+.summary{
+    padding: 2rem 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head{
+    color: hsl(241deg 100% 89% / 80%);
+    font-size: 1.3em;
+}
+.inner-head{
+    font-size: 3em;
+    color: white;
+}
+.inner-para{
+    font-size: .8em;
+    color: var(--Light-lavender);
+}
+.inner-flex{
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+.summary h4{
+    color: var(--Dark-gray-blue);
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.data{
+    display: flex;
+}
+.cuz-btn{
+    background: linear-gradient(0deg, var(--Light-royal-blue), var(--Light-slate-blue)55px);
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/* helpers */
+.g-3{
+    gap: 3rem;
+}
+/* ends */
+/* footer */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
